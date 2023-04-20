@@ -15,26 +15,26 @@
 // console.log(backWard);
 
 // capitalizing first word
-// let str = "hello world";
-// let capitalString = str.capitalStr();
 
-// String.prototype.capitalStr = function () {
-//   return this.charAt(0).toLocaleUpperCase();
-// };
+String.prototype.capitalStr = function () {
+  return this.charAt(0).toLocaleUpperCase() + str.slice(1);
+};
 
-// console.log(capitalString);
+let str = "hello world";
+let capitalString = str.capitalStr();
+console.log(capitalString);
 
 // capitalize vowels
 
 
 
-String.prototype.capitalizeVowel = function () {
-  return this.replace(/[aeiou]/g, function (match) {
-    return match.toUpperCase();
-  });
-};
+// String.prototype.capitalizeVowel = function () {
+//   return this.replace(/[aeiou]/g, function (match) {
+//     return match.toUpperCase();
+//   });
+// };
 
-let str = "hello mmemmed"; 
-let capitalizeVowel = str.capitalizeVowel();
+// let str = "hello mmemmed"; 
+// let capitalizeVowel = str.capitalizeVowel();
 
-console.log(capitalizeVowel);
+// console.log(capitalizeVowel);
