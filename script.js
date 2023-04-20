@@ -24,15 +24,17 @@
 
 // console.log(capitalString);
 
-
 // capitalize vowels
-let str = "h ellom mem med"; // made spaces to show the difference
-let capitalizeVowel = str.capitalizeVowel();
 
-console.log(capitalizeVowel);
+
 
 String.prototype.capitalizeVowel = function () {
-  return this.replace(/[aeiou]\w*/gi, function (match) {
+  return this.replace(/[aeiou]/g, function (match) {
     return match.toUpperCase();
   });
 };
+
+let str = "hello mmemmed"; 
+let capitalizeVowel = str.capitalizeVowel();
+
+console.log(capitalizeVowel);
